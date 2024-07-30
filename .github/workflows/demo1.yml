@@ -3,6 +3,7 @@ on:
   pull_request:   #define a list of activity types. must add this line
     types:
       - opened
+      - closed
   workflow_dispatch:
 
 jobs:
@@ -20,4 +21,4 @@ jobs:
       - name: Build code
         run: npm run build
       - name: Deploy project
-        run: echo "Deploying..."
+        run: echo "Deploying"
