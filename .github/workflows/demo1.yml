@@ -1,5 +1,10 @@
 name: Events Demo 1
-on: ...
+on: 
+  pull_request:   #define a list of activity types. must add this line
+    types:
+      - opened
+  workflow_dispatch:
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
