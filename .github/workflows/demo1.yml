@@ -3,6 +3,7 @@ on:
   pull_request:   #define a list of activity types. must add this line
     types:
       - opened
+      - closed
   workflow_dispatch:
 
 jobs:
