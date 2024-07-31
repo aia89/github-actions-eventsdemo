@@ -4,6 +4,10 @@ on:
     types:
       - opened
       - closed
+    branches:
+      - main
+      - 'dev-*'
+      - 'feat/**'
   workflow_dispatch:
   push:
       branches:
